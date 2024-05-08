@@ -1,0 +1,78 @@
+body{
+    background-color: hsl(225, 100%, 94%);
+}
+main{
+    margin: 50px 20px;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+}
+#main-illustration{
+    width: 100%;
+}
+#content{
+   padding: 20px;
+   text-align: center;
+}
+.bluish-bg{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    background-color: hsl(225, 100%, 94%);
+}
+button{
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+}
+button:last-child{
+    color: hsl(245, 75%, 52%);
+    background-color: hsl(225, 100%, 94%);
+}
+a{
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+    &:hover{
+        text-decoration: none;
+        color: hsl(224, 23%, 55%);
+}
+}
+button:not(:last-child):hover{
+    background-color: hsl(224, 23%, 55%);
+    cursor: pointer;
+}
+button:last-child:hover{
+    cursor: pointer;
+    background-color: transparent;
+
+}
+@media (min-width:480px) {
+    main{
+        width: 50%;
+        margin: 70px auto;
+    }
+}
+@media (min-width:768px) {
+    main{
+        width: 40%;
+        margin: 7px auto;
+    }
+    body{
+        background-image: url("pattern-background-desktop.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+@media (min-width:1024px) {
+    main{
+        width: 30%;
+        margin: 70px auto;
+    }
+}
